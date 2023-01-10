@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=VT323&display=swap');
+
+body{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(140, 162, 194);
+    font-family: 'VT323', monospace;
+}
+
+.perg{
+    background-color: rgb(234, 234, 234);
+    width: 450px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+    text-align: center;
+    border: 3px black solid;
+    border-left: 0;
+    border-bottom: 5px black solid;
+
+}
+
+.perg h1{
+    
+    padding: 20px;
+    font-family: 'Great Vibes', cursive;
+
+    
+}
+
+.input{
+    display: flex;
+    flex-direction: row;
+    font-size: 22px;
+}
+a{
+    text-decoration: none;
+}
+#certo{
+    color: green;
+}
+.linha{
+    background-color: rgb(123, 123, 123);
+    width: 3px;
+    height: 550px;
+}
+.img{
+
+    background-color: rgb(234, 234, 234);
+    width: 450px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+    border: 3px black solid;
+    border-right: 0;
+    border-bottom: 5px black solid;
+}
+
+
+#balao{
+    width: 150px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+    margin-right: -150px;
+    border: none;
+}
+.img img{
+    width: 250px;
+    border: 2px black solid;
+    border-radius: 20px;
+    rotate: -10deg;
+    margin-bottom: 80px;
+}
+
+.botao{
+    margin-top: 40px;
+    width: 140px;
+    height: 45px;
+    font-family: 'VT323', monospace;
+    font-size: 20px;
+    color: white;
+    rotate: -5deg;
+    cursor: pointer;
+}
+.botao:hover{
+    opacity: 0.8;
+
+}
+.errado button{
+    background-color: red;
+    display: none;
+}
+.certo button{
+    background-color: green;
+    display: none;
+}
+.escolha button{
+    background-color: rgb(13, 50, 110);
+   
+}
+
+.perg .retangulo{
+    background-color: green;
+    width: 150px;
+    height: 30px;
+    margin: 0px -150px -50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    border: 2px black solid;
+
+}
+
+.perg .triangulo{
+    background-color: green;
+    -webkit-clip-path: polygon(50% 100%, 13% 0, 87% 0);
+    clip-path: polygon(50% 100%, 13% 0, 87% 0);
+    width: 50px;
+    height: 30px;
+    margin: 40px 0px 0px 100px;
+    position: relative;
+}
+
+.perg .dificuldade{
+    margin-bottom: -40px;
+    margin-right: -100px;
+    
+}
+.perg .dificuldade img{
+    width: 32px;
+    margin: 0px 100px -20px -40px;
+
+    position: relative;
+}
+
+
+@media screen and (max-width: 685px){
+    
+    .perg{
+        width: 180px;
+        height: 360px;    
+    }
+    
+    .perg h1{
+        font-size: 20px;
+        padding: 20px;
+    }
+    
+    .input{
+
+        font-size: 17px;
+    }
+   
+    .linha{
+        height: 320px;
+    }
+    .img{
+        width: 180px;
+        height: 360px;
+    }
+    
+    
+    #balao{
+        width: 80px;
+        margin-bottom: 0px;
+        margin-right: -70px;
+        border: none;
+    }
+    .img img{
+        width: 120px;
+
+    }
+    
+    .botao{
+        margin-top: 20px;
+        margin-right: 0px;
+        width: 76px;
+        height: 30px;
+        font-size: 13px;
+
+    }
+    
+    .perg .retangulo{
+        width: 80px;
+        height: 16px;
+        margin: 10px -150px 0px -10px;
+        font-size: 11px;
+
+    }
+    
+    .perg .triangulo{
+        width: 20px;
+        height: 15px;
+        margin: -5px 0px 0px 50px;
+
+    }
+    
+    .perg .dificuldade{
+        margin-bottom: -20px;
+        margin-right: -70px;
+        
+    }
+    .perg .dificuldade img{
+        width: 17px;
+        margin: 0px 46px -20px -40px;
+
+    }
+    
+}

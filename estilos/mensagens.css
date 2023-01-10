@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+
+body{
+    background-color: rgba(255, 0, 0, 0.329);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: .2s;
+    transition-duration: 5s;
+    font-family: 'Moon Dance', cursive;
+
+}
+
+.carta{
+    background-image:linear-gradient(#EFD1AA, #e1b171);
+    width: 350px;
+    height: 20px;
+    border-left: 2px rgb(95, 95, 95) solid;
+    border-right: 2px rgb(95, 95, 95) solid;
+    font-size: 0;
+    transition: .2s;
+    transition-duration: 5s;
+    overflow: hidden;
+}
+
+.carta.aberta{
+    height: 70vh;
+    border-left: 2px rgb(95, 95, 95) solid;
+    border-right: 2px rgb(95, 95, 95) solid;
+    font-size: 18px;
+}
+
+#pena{
+    width: 120px;
+    margin-left: 500px;
+    rotate: 20deg;
+    margin-top: -270px;
+    position: relative;    
+    transition: .2s;
+    transition-duration: 5s;
+}
+.carta.aberta img{
+    width: 200px; 
+    margin-left: 70px;
+}
+
+.carta.aberta p{
+    padding: 0px 6px 0px 6px;
+    margin: 10px 0px 10px 0px;
+}
+
+.carta span{
+    padding: 0px 0px 0px 20px;
+}
+
+.pergaminho img{
+    width: 500px;
+}
+
+.pergaminho.cima{
+    margin-bottom: -10px;
+    position: relative;
+}
+.pergaminho.baixo{
+    margin-top: -10px;
+    position: relative;
+}
+
+@media screen and (max-width: 685px){
+
+.carta{
+    width: 280px;
+    height: 20px;
+}
+
+.carta.aberta{
+    height: 80vh;
+    font-size: 18px;
+}
+
+#pena{
+    display: none;
+}
+.carta.aberta img{
+    margin-left: 40px;
+}
+
+.pergaminho img{
+    width: 380px;
+}
+
+}
